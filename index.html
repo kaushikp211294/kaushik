@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Sanjna ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen" class="center lock-screen">
+  <div class="login-card">
+    <h1>🔐 Only Sanjna Allowed</h1>
+    <p>Hint: Your favourite date ❤️</p>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="content" class="hidden">
+
+<section class="page">
+  <h1>Hi Sanjna ❤️</h1>
+  <p>This is a small world<br>built just for you.</p>
+  <button onclick="nextPage()">I’m curious 👀</button>
+</section>
+
+<section class="page hidden">
+  <h2>Things I Love About You</h2>
+  <ul>
+    <li>You are a warrior. Always.</li>
+    <li>You manage everything beautifully.</li>
+    <li>You overcome every challenge.</li>
+    <li>You take forever to decide where to eat…</li>
+    <li>…and change your order till the last second 😌</li>
+  </ul>
+  <button onclick="nextPage()">Tell me more</button>
+</section>
+
+<section class="page hidden">
+  <h2>How It All Began</h2>
+  <p>
+    GMCS-1. BKC. 15 days.<br><br>
+    Barely a word spoken.<br><br>
+    Girgaon Chowpatty.<br>
+    One New Year’s question.<br>
+    One spontaneous trek.<br><br>
+    And everything changed.
+  </p>
+  <button onclick="nextPage()">Memories 📸</button>
+</section>
+
+<section class="page hidden gallery" id="galleryPage">
+  <h2>Our Moments</h2>
+  <div class="gallery-viewer">
+    <button class="gallery-nav prev" onclick="prevImage()" aria-label="Previous photo">‹</button>
+    <img id="galleryImage" src="images/img1.jpg" alt="Memory 1">
+    <button class="gallery-nav next" onclick="nextImage()" aria-label="Next photo">›</button>
+  </div>
+  <div class="gallery-meta">
+    <span id="galleryCounter">1 / 21</span>
+  </div>
+  <button id="galleryContinue" class="hidden" onclick="nextPage()">One more thing…</button>
+</section>
+
+<section class="page hidden">
+  <h2>A Few Words</h2>
+  <p>
+    I don’t promise perfection.<br>
+    But I promise presence.<br><br>
+    I choose you — every day.
+  </p>
+  <button onclick="fadeToQuestion()">💘</button>
+</section>
+
+<section class="page hidden">
+  <h1>Will you be my Valentine, Sanjna? 💖</h1>
+  <p id="noPrompt" class="no-prompt">Say yes so the story can keep blooming 🌸</p>
+  <div class="buttons">
+    <button class="yes" id="yesBtn" onclick="yesClicked()">YES 💘</button>
+    <button class="no" id="noBtn">NO 😈</button>
+  </div>
+</section>
+
+<section class="page hidden">
+  <h1>💖💖💖</h1>
+  <p>
+    That heartbeat was for you.<br><br>
+    Happy Valentine’s Day ❤️<br>
+    — Kushu
+  </p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
